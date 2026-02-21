@@ -1,0 +1,89 @@
+﻿Running Gradle task 'assembleRelease'...                        
+flutter : C:\Users\RITESH\.ge
+mini\antigravity\scratch\blin
+dness_guardian\android\app\sr
+c\main\AndroidManifest.xml 
+Error:
+At line:1 char:1
++ flutter build apk > 
+test_build.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (C:\User  
+  s\RITESH...fest.xml Erro   
+ r::String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+	uses-sdk:minSdkVersion 21 
+cannot be smaller than 
+version 23 declared in 
+library [com.google.firebase:
+firebase-auth:24.0.1] C:\User
+s\RITESH\.gradle\caches\8.12\
+transforms\b0f9a0b54ea9321658
+5682c443be653e\transformed\je
+tified-firebase-auth-24.0.1\A
+ndroidManifest.xml as the 
+library might be using APIs 
+not available in 21
+	Suggestion: use a 
+compatible library with a 
+minSdk of at most 21,
+		or increase this project's 
+minSdk version to at least 
+23,
+		or use tools:overrideLibrar
+y="com.google.firebase.auth" 
+to force usage (may lead to 
+runtime failures)
+
+FAILURE: Build failed with 
+an exception.
+
+* What went wrong:
+Execution failed for task ':a
+pp:processReleaseMainManifest
+'.
+> Manifest merger failed : 
+uses-sdk:minSdkVersion 21 
+cannot be smaller than 
+version 23 declared in 
+library [com.google.firebase:
+firebase-auth:24.0.1] C:\User
+s\RITESH\.gradle\caches\8.12\
+transforms\b0f9a0b54ea9321658
+5682c443be653e\transformed\je
+tified-firebase-auth-24.0.1\A
+ndroidManifest.xml as the 
+library might be using APIs 
+not available in 21
+  	Suggestion: use a 
+compatible library with a 
+minSdk of at most 21,
+  		or increase this 
+project's minSdk version to 
+at least 23,
+  		or use tools:overrideLibr
+ary="com.google.firebase.auth
+" to force usage (may lead 
+to runtime failures)
+
+* Try:
+> Run with --stacktrace 
+option to get the stack 
+trace.
+> Run with --info or --debug 
+option to get more log 
+output.
+> Run with --scan to get 
+full insights.
+> Get more help at 
+https://help.gradle.org.
+
+BUILD FAILED in 19s
+Running Gradle task 'assembleRelease'...                           19.4s
+Gradle task assembleRelease 
+failed with exit code 1

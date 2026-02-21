@@ -1,0 +1,15 @@
+# Flutter ignore
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+ios/.symlinks/
+
+# Node.js ignore
+backend/node_modules/
+backend/.env
+
+# OS ignore
+.DS_Store
+Thumbs.db

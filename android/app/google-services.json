@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1018863295961",
+    "project_id": "blindness-guardian",
+    "storage_bucket": "blindness-guardian.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018863295961:android:8a37385e1ef5560c2f0dc8",
+        "android_client_info": {
+          "package_name": "com.blindnessguardian.blindness_guardian"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDcudrEW6xVmmNBOjEloPdP6aVB9EBJIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
