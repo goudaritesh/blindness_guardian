@@ -131,7 +131,7 @@ app.get('/api/stats/:deviceId', async (req, res) => {
 
 // Sync Database & Start Server
 const PORT = process.env.PORT || 5000;
-sequelize.sync({ alter: true }).then(() => {
+sequelize.sync().then(() => {
     server.listen(PORT, () => console.log(`Guardian Server running on port ${PORT}`));
 }).catch(err => {
     console.error('Unable to connect to database:', err);
