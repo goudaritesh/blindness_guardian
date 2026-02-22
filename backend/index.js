@@ -133,21 +133,18 @@ app.get('/api/stats/:deviceId', async (req, res) => {
     }
 });
 
-// Sync Database & Start Server
+// Start Server Immediately
 const PORT = process.env.PORT || 5000;
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`Guardian Server is UP on port ${PORT}`);
 
-console.log('Attempting to connect to database...');
-sequelize.authenticate()
-    .then(() => {
-        console.log('Database connection has been established successfully.');
-        return sequelize.sync();
-    })
-    .then(() => {
-        console.log('Database synced successfully.');
-        server.listen(PORT, '0.0.0.0', () => {
-            console.log(`Guardian Server running on port ${PORT}`);
-        });
-    })
-    .catch(err => {
-        console.error('SERVER STARTUP ERROR:', err);
-    });
+    // Connect to DB in the background
+    console.log('Connecting to database...');
+    sequelize.authenticate()
+        .then(() => {
+            console.log('Database connected.');
+            return sequelize.sync();
+        })
+        .then(() => console.log('Tables Synced.'))
+        .catch(err => console.error('DB Background Error:', err));
+});
